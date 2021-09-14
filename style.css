@@ -1,0 +1,51 @@
+.img-box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 50%;
+  border: 2px dashed #ccc;
+  overflow: hidden;
+}
+
+.img-box label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.img-box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+}
+
+.img-box .delete {
+  position: absolute;
+  right: 2.5rem;
+  top: 1rem;
+  z-index: 1;
+  border: none;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: none;
+}
+
+.img-box .delete.active {
+  display: block;
+}
